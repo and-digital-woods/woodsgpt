@@ -10,8 +10,8 @@ import java.security.GeneralSecurityException;
 public class DemoApplication {
 
 	public static void main(String[] args) throws GeneralSecurityException, IOException {
-		FormReader formReader = new FormReader();
-		var responses = formReader.readForm();
+		ResponseReader reader = new ResponseReader();
+		var responses = reader.GetResponses();
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
